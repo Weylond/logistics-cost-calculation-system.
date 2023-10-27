@@ -1,0 +1,21 @@
+INFO: 2023/10/21 09:46:19 /app/cmd/svlz/svlz.go:139: /login login.Start() start called
+INFO: 2023/10/21 09:46:19 /app/internal/endpoints/login/login.go:106: /login | login module inited
+INFO: 2023/10/21 09:46:19 /app/cmd/svlz/svlz.go:139: /reg reg.Start() start called
+INFO: 2023/10/21 09:46:19 /app/internal/endpoints/reg/reg.go:89: /reg | reg module inited
+INFO: 2023/10/21 09:46:19 /app/cmd/svlz/svlz.go:139: /swag test.Start() start called
+INFO: 2023/10/21 09:46:19 /app/internal/endpoints/test/test.go:25: /swag test module inited
+INFO: 2023/10/21 09:46:19 /app/cmd/svlz/svlz.go:139: /route route.Start() start called
+INFO: 2023/10/21 09:46:19 /app/internal/endpoints/route/route.go:35: /route route module inited
+INFO: 2023/10/21 09:46:19 /app/cmd/svlz/svlz.go:139: /refresh refresh.Start() start called
+INFO: 2023/10/21 09:46:19 /app/internal/endpoints/refresh/refresh.go:35: /refresh test module inited
+ERROR: 2023/10/21 09:47:30 /app/cmd/svlz/svlz.go:112: SIGTERM received
+INFO: 2023/10/21 09:47:30 /app/cmd/svlz/svlz.go:153: /login login.Stop() called
+INFO: 2023/10/21 09:47:30 /app/internal/endpoints/login/login.go:210: /login | login module stoped
+INFO: 2023/10/21 09:47:30 /app/cmd/svlz/svlz.go:153: /reg reg.Stop() called
+INFO: 2023/10/21 09:47:30 /app/internal/endpoints/reg/reg.go:183: /reg | reg module stoped
+INFO: 2023/10/21 09:47:30 /app/cmd/svlz/svlz.go:153: /swag test.Stop() called
+INFO: 2023/10/21 09:47:30 /app/internal/endpoints/test/test.go:36: /swag test module stoped
+INFO: 2023/10/21 09:47:30 /app/cmd/svlz/svlz.go:153: /route route.Stop() called
+INFO: 2023/10/21 09:47:30 /app/internal/endpoints/route/route.go:41: /route route module stoped
+INFO: 2023/10/21 09:47:30 /app/cmd/svlz/svlz.go:153: /refresh refresh.Stop() called
+INFO: 2023/10/21 09:47:30 /app/internal/endpoints/refresh/refresh.go:46: /refresh test module stoped

@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ../backend/
+      dockerfile: ./build/Dockerfile-prod
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - private
+    depends_on:
+      - postgres
+    restart: always
+    env_file:
+      - .env
+    command: -port 4433 -log-file ./logs/GEN -prefix /api
+
+  nginx:
+    image: nginx:1.25.0
+    ports:
+      - 443:443
+      - 80:80
+    volumes:
+      - ./static:/static:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - private
+    depends_on:
+      - backend
+    restart: always
+
+  postgres:
+    image: postgres:15.3-alpine3.18
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
+    networks:
+      - private
+    restart: always
+    env_file:
+      - .env
+
+networks:
+  private:
