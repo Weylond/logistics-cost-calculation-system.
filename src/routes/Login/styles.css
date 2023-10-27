@@ -1,0 +1,211 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(222, 130, 255, 1) 0%,
+    rgba(255, 142, 142, 1) 50%,
+    rgba(117, 172, 255, 1) 100%
+  );
+  user-select: none;
+
+  color: var(--font-color);
+}
+
+.background {
+  background: var(--background-login-wrapper);
+  backdrop-filter: blur(2px);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+  padding: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background form button {
+  background: var(--continue-button-background);
+  transition: 0.2s;
+  border: none;
+  width: 100%;
+  height: 42px;
+  color: white;
+
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  justify-self: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.background form button:active {
+  scale: 0.97;
+}
+
+.background form button[disabled] {
+  opacity: 0.75;
+}
+.background form button[disabled]:active {
+  scale: 1;
+}
+
+.background form button.loading {
+  width: 42px;
+  border-radius: 50px;
+}
+
+.background form button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.background .wrapper {
+  display: flex;
+  height: fit-content;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.background .wrapper .selector button {
+  width: fit-content;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: max-content;
+
+  color: var(--font-color);
+}
+.background .wrapper form {
+  display: grid;
+  gap: 10px;
+}
+
+.background form label {
+  font-family: "Roboto";
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  width: max-content;
+}
+
+#authWindow {
+  width: 400px;
+}
+
+#authWindow h1 {
+  font-size: 36px;
+}
+
+#authWindow img {
+  pointer-events: none;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.6;
+  height: fit-content;
+}
+
+.selector {
+  display: flex;
+  gap: 80px;
+}
+
+.selector button {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.5;
+  padding: 0px 0px 15px 0px;
+}
+.selector button.active {
+  opacity: 1;
+}
+
+.background .wrapper #QRWindow img {
+  width: 175px;
+  text-decoration: none;
+}
+
+#anotherLog {
+  background: transparent;
+  width: fit-content;
+  justify-self: center;
+  color: var(--font-color);
+}
+
+#QRWindow {
+  width: 230px;
+
+  display: grid;
+  justify-content: center;
+  position: relative;
+}
+
+#QRWindow img {
+  justify-self: center;
+}
+#QRWindow .description {
+  display: grid;
+  justify-content: center;
+}
+#QRWindow .description h1 {
+  font-size: 20px;
+  width: fit-content;
+  justify-self: center;
+  height: fit-content;
+}
+
+#QRWindow .description h1 button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+#QRWindow .description h1 button:hover {
+  opacity: 1;
+}
+#QRWindow .description h1 button svg {
+  fill: var(--font-color);
+  width: 24px;
+  height: 24px;
+}
+
+#QRWindow .description p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #authWindow {
+    width: 100%;
+  }
+  #authWindow h1 {
+    font-size: 25px;
+  }
+
+  .background {
+    align-items: unset;
+    padding: 60px 35px 35px 35px;
+  }
+
+  .selector {
+    margin-top: 60px;
+  }
+}

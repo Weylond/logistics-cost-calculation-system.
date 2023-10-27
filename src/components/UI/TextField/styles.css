@@ -1,0 +1,16 @@
+input {
+  background: var(--textfield-color);
+  color: var(--font-color);
+  border: none;
+  padding: 12px;
+  outline: none;
+  border-radius: 10px;
+
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+
+input[disabled] {
+  opacity: 0.75;
+}

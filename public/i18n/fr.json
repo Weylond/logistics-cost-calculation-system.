@@ -1,0 +1,8 @@
+{
+    "welcome" : "Bienvenue",
+    "description": "Entrez vos identifiants ou créez un nouveau logisshtickID pour continuer.",
+    "password": "Mot de passe",
+    "createNewAccount": "Сréer un nouveau compte",
+    "signIn": "Autoriser",
+    "continue": "Continuer"
+}

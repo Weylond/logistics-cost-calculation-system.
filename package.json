@@ -1,0 +1,37 @@
+{
+  "name": "xlogistick-web-app",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "eslint": "^8.47.0",
+    "eslint-config-standard-with-typescript": "^37.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-solid": "^0.12.1",
+    "@types/node": "^20.4.6",
+    "solid-devtools": "^0.27.3",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^0.16.4",
+    "vite-plugin-solid": "^2.7.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "zlib": "^1.0.5"
+  },
+  "dependencies": {
+    "@solid-primitives/i18n": "^1.4.0",
+    "@solid-primitives/media": "^2.2.3",
+    "@solidjs/router": "^0.8.2",
+    "solid-js": "^1.7.6"
+  }
+}

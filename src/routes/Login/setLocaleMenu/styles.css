@@ -1,0 +1,92 @@
+.setLocale {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 7px;
+  color: var(--font-color);
+  opacity: 0.55;
+}
+
+.setLocale svg {
+  width: 22px;
+  fill: var(--font-color);
+}
+
+.setLocaleMenu {
+  width: 190px;
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  background: rgba(255, 255, 255, 0.349);
+  padding: 10px;
+  border-radius: 15px;
+  color: var(--font-color);
+  background: color-mix(
+    in hsl longer hue,
+    var(--textfield-color) 60%,
+    transparent
+  );
+  transition: 0.1s;
+  transform-origin: bottom left 3px;
+
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.setLocaleMenu.hidden {
+  opacity: 0;
+  scale: 0.9;
+  pointer-events: none;
+}
+
+.setLocaleMenu .locale {
+  padding: 8px;
+  cursor: pointer;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  transition: 0.2s;
+  border-radius: 10px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+
+  color: var(--font-color);
+}
+
+.setLocaleMenu .locale img {
+  width: 20px;
+}
+
+.setLocaleMenu .locale svg {
+  width: 15px;
+  fill: var(--font-color);
+  fill-opacity: 0.6;
+  margin-inline-start: auto;
+}
+
+.setLocaleMenu .locale:hover {
+  background: rgba(0, 0, 0, 0.26);
+}
+
+.setLocaleMenu .locale:disabled:active {
+  scale: 1;
+}
+
+.setLocaleMenu .locale:active {
+  scale: 0.95;
+}

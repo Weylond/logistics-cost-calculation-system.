@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+:root[data-theme="light"] {
+  --background-login-wrapper: hsla(0, 0%, 100%, 0.8);
+  --font-color: hsl(0, 0%, 0%);
+  --textfield-color: white;
+
+  --continue-button-background: black;
+}
+
+:root[data-theme="dark"] {
+  --background-login-wrapper: hsla(0, 0%, 7%, 0.8);
+  --font-color: hsl(0, 0%, 100%);
+  --textfield-color: hsl(0, 1%, 21%);
+
+  --continue-button-background: linear-gradient(
+    90deg,
+    hsl(0, 100%, 78%) 0%,
+    hsl(284, 100%, 75%) 100%
+  );
+}
